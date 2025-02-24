@@ -1,0 +1,513 @@
+body {
+  font-family: "HK Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+  width: 100%;
+}
+
+/* header-track */
+
+.header-track-wrapper {
+  height: 42px;
+  padding: 0px 80px;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-text {
+  font-family: "HK Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+}
+
+.header-track-buttons-container {
+  display: flex;
+  height: 20px;
+}
+
+.track-order-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.delivery-truck {
+  width: 18px;
+  height: 18px;
+}
+
+.track-order {
+  font-family: "HK Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #666666;
+}
+
+.all-offers-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  border-left: 1px solid #d9d9d9;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.discount {
+  width: 18px;
+  height: 18px;
+}
+
+.all-offers {
+  font-family: "HK Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #666666;
+}
+
+/* end of header-track */
+
+/* header-search */
+
+.header-search-wrapper {
+  height: 90px;
+  padding: 0px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+}
+
+.menu-logo-container {
+  display: flex;
+  gap: 20px;
+}
+
+.burger-menu-icon {
+  background-color: #f3f9fb;
+  width: 26px;
+  height: 26px;
+  padding: 11px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.logo {
+}
+
+.search-bar-container {
+  height: 48px;
+  background: #f3f9fb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  width: 420px;
+  margin: 0px 10px;
+}
+
+.magnify-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.list-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.sign-in-cart-container {
+  display: flex;
+  height: 20px;
+}
+
+.sign-in-sign-up-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.sign-in-sign-up-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.sign-in-sign-up-button {
+  font-family: "HK Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
+  color: #666666;
+}
+
+.cart-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  border-left: 1px solid #d9d9d9;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.cart-button {
+  font-family: "HK Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
+  color: #666666;
+}
+
+/* end of header-search */
+
+/* dropdown categories */
+
+#dropdowns-container {
+  padding: 0px 70px;
+  border-bottom: 1px solid #ededed;
+}
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  margin: 16px 10px;
+}
+
+.dropdown-button {
+  padding: 10px 35px 10px 20px;
+  background-color: #f3f9fb;
+  color: #222222;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.dropdown-button::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-left: 2px solid #222222;
+  border-bottom: 2px solid #222222;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 14px;
+  top: 45%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.dropdown-button:hover {
+  background-color: #22235f;
+  color: #ffffff;
+}
+.dropdown-button:hover::after {
+  border-bottom-color: #ffffff;
+  border-left-color: #ffffff;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+  display: block;
+  color: #222222;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-container:hover .dropdown-menu {
+  display: block;
+}
+
+.view-all-button {
+  padding: 10px 35px 10px 20px;
+  background-color: #f3f9fb;
+  color: #222222;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.view-all-button:hover {
+  background-color: #22235f;
+  color: #ffffff;
+}
+
+.view-all-button::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-left: 2px solid #222222;
+  border-bottom: 2px solid #222222;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 14px;
+  top: 49%;
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.view-all-button:hover::after {
+  border-bottom-color: #ffffff;
+  border-left-color: #ffffff;
+}
+
+/* end of dropdown categories */
+
+/* carousel */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  overflow: hidden;
+  background-color: #212844;
+  margin: 26px 80px;
+  border-radius: 16px;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f3f9fb;
+  color: #008ecc;
+  border: 10px solid white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  height: 86px;
+  width: 86px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev {
+  left: 35px;
+}
+
+.next {
+  right: 35px;
+}
+
+.carousel-button:hover {
+  background-color: #d9edf1;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 16%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  transition: width 0.3s ease;
+}
+
+.dot.active {
+  width: 24px;
+  border-radius: 7px;
+}
+
+/* end of carousel */
+
+/* Footer  */
+.footer {
+  /* position: absolute; */
+
+  padding: 0px 80px;
+  height: 500px;
+  background: #f3f9fb;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.contact-us {
+  width: 200px;
+}
+
+.contact-us h2 {
+  font-family: "HK Grotesk";
+  font-weight: 700;
+  font-size: 20px;
+  color: #222222;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.whatsapp,
+.call-us {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.whatsapp i,
+.call-us i {
+  margin-right: 10px;
+}
+
+.whatsapp span,
+.call-us span {
+  font-family: "HK Grotesk";
+  font-weight: 600;
+  font-size: 16px;
+  color: #222222;
+}
+
+.popular-categories {
+  width: 250px;
+}
+
+.popular-categories h2 {
+  font-family: "HK Grotesk";
+  font-weight: 600;
+  font-size: 20px;
+  color: #222222;
+}
+
+.popular-categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.popular-categories li {
+  font-family: "HK Grotesk";
+  font-weight: 500;
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.customer-services {
+  width: 220px;
+}
+
+.customer-services h2 {
+  font-family: "HK Grotesk";
+  font-weight: 600;
+  font-size: 20px;
+  color: #222222;
+}
+
+.customer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.customer-services li {
+  font-family: "HK Grotesk";
+  font-weight: 500;
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.logo-section {
+  width: 186px;
+}
+
+.logo-section img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  opacity: 0.2;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+  font-family: "HK Grotesk";
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  opacity: 0.6;
+  padding: 20px;
+}
+
+/* end of footer */

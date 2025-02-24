@@ -1,0 +1,217 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
+    <title>Discount Appliance Store</title>
+  </head>
+  <body>
+    <!-- header-track -->
+
+    <div class="header-track-wrapper">
+      <p class="welcome-text">Welcome to worldwide Discount Appliance!</p>
+      <div class="header-track-buttons-container">
+        <div class="track-order-container">
+          <img
+            class="delivery-truck"
+            src="./assets/icons/delivery-truck-icon.svg"
+            alt="Delivery Truck Icon"
+            width="18"
+            height="18"
+          />
+          <p class="track-order">Track your order</p>
+        </div>
+        <div class="all-offers-container">
+          <img
+            class="discount"
+            src="./assets/icons/discount-icon.svg"
+            alt="Discount Icon"
+            width="18"
+            height="18"
+          />
+          <p class="all-offers">All Offers</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of header-track -->
+
+    <!-- header-search -->
+
+    <div class="header-search-wrapper">
+      <div class="menu-logo-container">
+        <img
+          class="burger-menu-icon"
+          src="./assets/icons/burger-menu-icon.svg"
+          alt="Burger Menu Icon"
+        />
+        <img
+          class="logo"
+          src="./assets/images/logo.png"
+          alt="Logo"
+          width="190"
+        />
+      </div>
+      <div class="search-bar-container">
+        <img
+          class="magnify-icon"
+          src="./assets/icons/magnify-icon.svg"
+          alt="Magnify Icon"
+        />
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Find items for your necessities, electronics and more..."
+        />
+        <img
+          class="list-icon"
+          src="./assets/icons/list-icon.svg"
+          alt="List Icon"
+        />
+      </div>
+      <div class="sign-in-cart-container">
+        <div class="sign-in-sign-up-button-container">
+          <img
+            class="sign-in-sign-up-icon"
+            src="./assets/icons/user-default-icon.svg"
+            alt="Delivery Truck Icon"
+            width="18"
+            height="18"
+          />
+          <p class="sign-in-sign-up-button">Sign Up/Sign In</p>
+        </div>
+        <div class="cart-button-container">
+          <img
+            class="cart-icon"
+            src="./assets/icons/cart-icon.svg"
+            alt="Discount Icon"
+            width="18"
+            height="18"
+          />
+          <p class="cart-button">Cart</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of header-search -->
+
+    <!-- dropdown categories -->
+
+    <div id="dropdowns-container"></div>
+
+    <!-- end of  dropdown categories -->
+
+    <!-- carousel -->
+
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <button class="carousel-button prev" onclick="moveSlide(-1)">
+          &#10094;
+        </button>
+        <div class="carousel-images">
+          <img
+            src="./assets/images/carousel-image.png"
+            alt="Image 1"
+            class="carousel-image"
+          />
+          <img
+            src="./assets/images/carousel-image.png"
+            alt="Image 2"
+            class="carousel-image"
+          />
+          <img
+            src="./assets/images/carousel-image.png"
+            alt="Image 3"
+            class="carousel-image"
+          />
+        </div>
+        <button class="carousel-button next" onclick="moveSlide(1)">
+          &#10095;
+        </button>
+      </div>
+
+      <div class="carousel-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <!-- end of carousel -->
+
+    <!-- footer -->
+
+    <div class="footer">
+      <div class="footer-container">
+        <div class="contact-us">
+          <div class="logo-section">
+            <img src="./assets/images/logo.png" alt="Logo" />
+          </div>
+          <h2>Contact Us</h2>
+          <div class="contact-info-wrapper">
+            <div class="whatsapp">
+              <img src="./assets/icons/whatsapp-icon.svg" alt="whatsapp" />
+              <div>
+                <p class="contact-info">Whats App</p>
+                <p>+1 202-918-2132</p>
+              </div>
+            </div>
+            <div class="call-us">
+              <img
+                class="call-us-icon"
+                src="./assets/icons/phone-icon.svg"
+                alt="phone"
+              />
+              <div>
+                <p class="contact-info">Whats App</p>
+                <p>+1 202-918-2132</p>
+              </div>
+            </div>
+            <div class="call-us">
+              <i class="icon-call"></i>
+              <span>Call Us</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="popular-categories">
+          <h2>Most Popular Categories</h2>
+          <ul>
+            <li>Freezers</li>
+            <li>Dryers</li>
+            <li>Exercise Machines</li>
+            <li>Ranges</li>
+            <li>Air Conditioners</li>
+            <li>Electronics</li>
+            <li>Wall Ovens</li>
+            <li>Cooktops</li>
+          </ul>
+        </div>
+
+        <div class="customer-services">
+          <h2>Customer Services</h2>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>FAQ</li>
+            <li>Privacy Policy</li>
+            <li>Refund Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="copyright">
+        <p>© 2025 All rights reserved. Discount Appliance</p>
+      </div>
+    </div>
+
+    <!-- end of footer -->
+
+    <script src="./scripts/dropdowns.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
